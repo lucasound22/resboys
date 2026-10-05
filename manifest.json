@@ -1,0 +1,13 @@
+{
+  "name": "RES BOYS — Melbourne Streetwear — Reservoir 3073",
+  "short_name": "RES BOYS",
+  "description": "Melbourne streetwear brand — premium hoodies, caps, cargo pants — Reservoir 3073 — Drop 01 SS26",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f6f1",
+  "theme_color": "#070708",
+  "icons": [
+    {"src": "assets/icon_512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "categories": ["shopping","lifestyle","streetwear"]
+}

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://resboys.com.au/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow checkout modals
+Disallow: /*?*success=

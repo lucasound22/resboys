@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RES BOYS — NEVER BLEND IN.</title>
+<meta name="description" content="RES BOYS — NEVER BLEND IN. Heavy fleece, work jackets, snapbacks and cargos built in the 73 — Reservoir, Melbourne. 15% off your first order.">
+<link rel="preload" as="image" href="assets/hero_crew_1600.jpg" imagesrcset="assets/hero_crew_1600.jpg 1600w, assets/hero_crew.jpg 3200w" imagesizes="100vw" fetchpriority="high">
+<link rel="icon" type="image/png" href="assets/icon_512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="https://resboys.com.au/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="RES BOYS"><meta property="og:title" content="RES BOYS — NEVER BLEND IN."><meta property="og:description" content="Heavy fleece, work jackets, snapbacks and cargos built in the 73 — Reservoir, Melbourne. 15% off your first order.">
+<meta property="og:image" content="https://resboys.com.au/assets/hero_crew_1600.jpg"><meta property="og:url" content="https://resboys.com.au/"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"RES BOYS","url":"https://resboys.com.au/","logo":"https://resboys.com.au/assets/icon_512.png","slogan":"Never Blend In","address":{"@type":"PostalAddress","addressLocality":"Reservoir","addressRegion":"VIC","postalCode":"3073","addressCountry":"AU"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0a0a;
+  --white:#fafaf7;
+  --bone:#efebe3;
+  --charcoal:#2a2a2a;
+  --olive:#3d4a32;
+  --grey:#e9e6e1;
+  --line:#1a1a1a;
+  --accent:#111;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Instrument Sans',system-ui,sans-serif;background:var(--white);color:var(--black);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.mono{font-family:'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;font-size:11px}
+.anton{font-family:'Anton',sans-serif;letter-spacing:.01em;line-height:.85;text-transform:uppercase}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:0;background:none;font:inherit}
+img{display:block;width:100%;height:auto}
+
+/* Top ticker */
+.ticker{background:var(--black);color:var(--white);padding:8px 0;overflow:hidden;white-space:nowrap;border-bottom:1px solid #222}
+.ticker-track{display:flex;gap:48px;animation:marquee 28s linear infinite}
+.ticker span{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.15em}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--black);display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+.logo{font-family:'Anton',sans-serif;font-size:28px;letter-spacing:.02em;line-height:1}
+nav{display:flex;gap:28px}
+nav a{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;position:relative}
+nav a:after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--black);transition:.3s}
+nav a:hover:after{width:100%}
+.header-actions{display:flex;gap:14px;align-items:center}
+.cart-btn{border:1px solid var(--black);padding:8px 16px;display:flex;gap:8px;align-items:center;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:700}
+.cart-btn:hover{background:var(--black);color:var(--white)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;min-height:78vh;border-bottom:1px solid var(--black)}
+.hero-left{background:var(--black);color:var(--white);padding:32px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.hero-left::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 30%, #222 0%, transparent 60%);opacity:.6}
+.hero-title{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:clamp(72px,11vw,156px);line-height:.82;z-index:1}
+.hero-title span{display:block}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;z-index:1;margin-top:40px;gap:24px}
+.hero-copy{max-width:320px;font-size:14px;line-height:1.5;opacity:.8}
+.hero-cta{border:1px solid #fff;padding:14px 22px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.1em;display:inline-block;transition:.2s}
+.hero-cta:hover{background:var(--white);color:var(--black)}
+.hero-right{position:relative;background:#ddd;overflow:hidden}
+.hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-badge{position:absolute;bottom:18px;left:18px;background:var(--white);border:1px solid var(--black);padding:10px 14px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;line-height:1.4}
+.hero-badge strong{display:block;font-size:13px;font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;letter-spacing:.02em}
+
+/* Cap strip */
+.cap-strip{border-bottom:1px solid var(--black);display:grid;grid-template-columns:280px 1fr;background:var(--bone)}
+.cap-strip-label{padding:24px;border-right:1px solid var(--black);display:flex;flex-direction:column;justify-content:center}
+.cap-strip-label h2{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:28px;line-height:.9}
+.cap-strip-label p{margin-top:10px;font-size:13px;line-height:1.4;opacity:.7}
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.cap-item{border-right:1px solid var(--black);padding:18px 18px 14px;background:var(--white);text-align:center;transition:.2s}
+.cap-item:last-child{border-right:0}
+.cap-item img{aspect-ratio:1;object-fit:contain;background:#f3f2f0;padding:12px}
+.cap-item:hover{background:#efebe3}
+.cap-meta{display:flex;justify-content:space-between;margin-top:12px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px}
+.cap-meta .price{font-weight:700}
+
+/* Filters */
+.filters{position:sticky;top:58px;z-index:40;background:var(--white);border-bottom:1px solid var(--black);display:flex;gap:0;overflow:auto;padding:0 0 0 24px}
+.filter-btn{white-space:nowrap;padding:14px 18px;border-right:1px solid var(--black);font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.1em;transition:.15s}
+.filter-btn.active{background:var(--black);color:var(--white)}
+.filter-btn:hover:not(.active){background:var(--grey)}
+
+/* Products */
+.section{border-bottom:1px solid var(--black)}
+.section-head{display:grid;grid-template-columns:1fr auto;padding:18px 24px;align-items:center;border-bottom:1px solid var(--black);background:var(--grey)}
+.section-head h3{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:22px}
+.section-head p{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;opacity:.7}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.product-card{border-right:1px solid var(--black);border-bottom:1px solid var(--black);background:var(--white);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.product-card:nth-child(4n){border-right:0}
+.product-img{aspect-ratio:1/1.1;background:#f2f1ee;position:relative;overflow:hidden}
+.product-img img{width:100%;height:100%;object-fit:contain;padding:18px;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.product-card:hover .product-img img{transform:scale(1.06)}
+.product-tag{position:absolute;top:12px;left:12px;background:var(--black);color:var(--white);font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:9px;padding:4px 8px;letter-spacing:.1em}
+.product-info{padding:14px 14px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.product-top{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.product-name{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:18px;line-height:.95;letter-spacing:.01em}
+.product-color{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;opacity:.6;text-transform:uppercase;margin-top:4px}
+.product-price{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:13px}
+.product-actions{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:8px}
+.size-select{border:1px solid var(--black);padding:10px 8px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;background:var(--white);width:100%}
+.add-btn{background:var(--black);color:var(--white);padding:10px 14px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.08em;font-weight:700;transition:.2s}
+.add-btn:hover{background:#222}
+.add-btn:active{transform:scale(.98)}
+
+/* Lookbook banner */
+.lookbook{position:relative;border-bottom:1px solid var(--black);display:grid;grid-template-columns:1fr 1fr}
+.lookbook-img{height:auto;min-height:68vh;overflow:hidden;position:relative}
+.lookbook-img>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lookbook-overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 60%)}
+.lookbook-text{position:absolute;bottom:0;left:0;padding:24px;color:var(--white);z-index:2}.lookbook-overlay{z-index:1}
+.lookbook-text h2{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:clamp(36px,5vw,64px);line-height:.9}
+.lookbook-details{background:var(--black);color:var(--white);padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#333;border:1px solid #333}
+.detail-grid img{aspect-ratio:1;background:#111}
+.detail-copy{margin-top:24px}
+.detail-copy h4{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:28px}
+.detail-copy ul{margin-top:16px;list-style:none;display:grid;gap:10px}
+.detail-copy li{display:flex;gap:12px;font-size:13px;line-height:1.4;opacity:.85}
+.detail-copy li span{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;background:#222;padding:2px 6px;height:fit-content}
+
+/* Cart Drawer */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(4px);z-index:80;opacity:0;pointer-events:none;transition:.3s}
+.cart-overlay.open{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:0;height:100dvh;width:min(480px,92vw);background:var(--white);z-index:90;border-left:1px solid var(--black);transform:translateX(100%);transition:transform .45s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{padding:18px 20px;border-bottom:1px solid var(--black);display:flex;justify-content:space-between;align-items:center}
+.cart-head h3{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:22px}
+.cart-items{flex:1;overflow:auto;padding:16px;display:grid;gap:12px;align-content:start}
+.cart-item{display:grid;grid-template-columns:84px 1fr auto;gap:12px;border:1px solid var(--black);padding:8px;background:var(--white)}
+.cart-item img{aspect-ratio:1;object-fit:contain;background:#f2f1ee;padding:6px}
+.cart-item-meta h4{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:14px}
+.cart-item-meta p{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;opacity:.7;margin-top:4px}
+.qty{display:flex;align-items:center;gap:8px;margin-top:8px}
+.qty button{border:1px solid var(--black);width:24px;height:24px;display:grid;place-items:center;font-size:12px}
+.qty button:hover{background:var(--black);color:var(--white)}
+.cart-foot{border-top:1px solid var(--black);padding:16px 20px;background:var(--grey);display:grid;gap:12px}
+.cart-row{display:flex;justify-content:space-between;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px}
+.cart-row.total{font-size:14px;font-weight:700;border-top:1px dashed var(--black);padding-top:10px;margin-top:4px}
+.checkout-btn{background:var(--black);color:var(--white);padding:16px;font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:18px;letter-spacing:.04em;transition:.2s}
+.checkout-btn:hover{background:#222}
+
+/* Checkout modal */
+.modal{position:fixed;inset:0;z-index:100;display:none}
+.modal.open{display:grid;place-items:center;padding:20px}
+.modal-bg{position:absolute;inset:0;background:rgba(10,10,10,.7);backdrop-filter:blur(10px)}
+.modal-box{position:relative;background:var(--white);width:min(720px,96vw);max-height:92vh;overflow:auto;border:1px solid var(--black)}
+.modal-head{padding:20px;border-bottom:1px solid var(--black);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:var(--white);z-index:1}
+.modal-head h3{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:24px}
+.modal-body{padding:20px;display:grid;gap:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid .full{grid-column:1/-1}
+label{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;display:grid;gap:6px}
+input, select{border:1px solid var(--black);padding:12px 12px;font-family:'Instrument Sans';font-size:14px;background:var(--white);width:100%;outline:none}
+input:focus{border-width:2px;padding:11px 11px}
+.pay-btn{background:var(--black);color:var(--white);padding:16px;font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:18px;letter-spacing:.04em}
+.pay-btn:hover{background:#1a1a1a}
+.order-summary{border:1px solid var(--black);padding:16px;background:var(--bone);display:grid;gap:8px}
+.order-summary .row{display:flex;justify-content:space-between;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px}
+.success{display:grid;place-items:center;padding:40px 20px;text-align:center;gap:16px}
+.success h2{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:42px;line-height:.9}
+.success p{max-width:36ch;line-height:1.5}
+
+/* Footer */
+footer{background:var(--black);color:var(--white);padding:28px 24px;display:grid;gap:24px}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:24px;border-bottom:1px solid #222;padding-bottom:24px}
+.footer-logo{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:52px;line-height:.85}
+.footer-col h5{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.12em;margin-bottom:14px;opacity:.7}
+.footer-col ul{list-style:none;display:grid;gap:8px;font-size:13px;opacity:.85}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:10px;opacity:.6;flex-wrap:wrap}
+
+/* Responsive */
+@media(max-width:1024px){
+ .hero{grid-template-columns:1fr}
+ .product-grid{grid-template-columns:repeat(2,1fr)}
+ .product-card:nth-child(4n){border-right:1px solid var(--black)}
+ .product-card:nth-child(2n){border-right:0}
+ .cap-grid{grid-template-columns:repeat(2,1fr)}
+ .lookbook{grid-template-columns:1fr}
+ .footer-top{grid-template-columns:1fr 1fr}
+ .filters{top:56px}
+}
+@media(max-width:600px){
+ header{padding:12px 14px}
+ .hero-left{padding:22px}
+ .section-head,.cap-strip-label{padding:16px}
+ .form-grid{grid-template-columns:1fr}
+ .footer-top{grid-template-columns:1fr}
+}
+</style>
+
+
+<style>
+/* Subtle Reservoir 3073 cue — almost hidden */
+.resv-cue{position:fixed;bottom:12px;left:12px;z-index:2;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:7px;letter-spacing:.2em;opacity:.25;transform:rotate(-90deg);transform-origin:left bottom;pointer-events:none}
+.resv-cue2{position:absolute;top:18px;right:18px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:7px;opacity:.18;letter-spacing:.3em}
+</style>
+
+<style>
+.logo{display:flex;align-items:center}
+.product-img,.cap-item img,.cart-item img{background:#eeede9}
+.product-img img{padding:10px}
+.hero2{background:#0a0a0a;color:#fafaf7;border-bottom:1px solid #000}
+.h2-img{position:relative;overflow:hidden;background:#111}
+.h2-img img{width:100%;height:auto;max-height:82vh;object-fit:cover;object-position:center 55%;display:block}
+.h2-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.5) 0%,rgba(10,10,10,0) 22%),radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.45) 100%);pointer-events:none}
+.h2-tag{position:absolute;top:18px;left:20px;z-index:2;background:#fafaf7;color:#0a0a0a;padding:6px 10px;font-size:10px}
+.h2-wear{position:absolute;bottom:14px;right:20px;z-index:2;font-size:9px;opacity:.8;text-align:right;max-width:60%}
+.h2-strip{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;padding:30px 32px}
+.h2-logo{height:clamp(70px,8vw,120px);width:auto}
+.h2-slogan{font-size:clamp(40px,6.4vw,92px);line-height:.88;letter-spacing:.005em}
+.h2-right{max-width:300px;display:grid;gap:16px}
+.h2-right p{font-size:14px;line-height:1.5;opacity:.8}
+.street-grid{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--black)}
+.street-grid img{height:320px;width:100%;object-fit:cover;border-right:1px solid var(--black);filter:grayscale(.2);transition:filter .3s}
+.street-grid img:last-child{border-right:0}.street-grid img:hover{filter:none}
+.cart-promo{display:flex;gap:6px}.cart-promo input{padding:10px;font-size:12px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase}
+.cart-promo button{border:1px solid var(--black);padding:0 14px;font-weight:700}.cart-promo button:hover{background:var(--black);color:var(--white)}
+.checkout-btn:disabled{opacity:.6;cursor:wait}
+.promo{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:16px;opacity:0;transition:opacity .3s}
+.promo[hidden]{display:none}.promo.show{opacity:1}
+.promo-bg{position:absolute;inset:0;background:rgba(10,10,10,.72);backdrop-filter:blur(6px)}
+.promo-box{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;width:min(820px,100%);background:var(--white);border:1px solid #000;max-height:92vh;overflow:auto;transform:translateY(14px);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.promo.show .promo-box{transform:none}
+.promo-img img{width:100%;height:100%;object-fit:cover;min-height:360px}
+.promo-body img{align-self:flex-start}.promo-body{padding:34px 30px 24px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.promo-body h2{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:clamp(38px,5vw,58px);line-height:.9;text-transform:uppercase}
+.promo-body p{font-size:14px;line-height:1.5;opacity:.8}
+.promo-body form{display:grid;gap:8px}
+.promo-body input{padding:14px;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:13px;border:1px solid #000}
+.promo-go{background:#0a0a0a;color:#fff;padding:15px;font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-size:18px;letter-spacing:.04em}.promo-go:hover{background:#222}
+.promo-err{color:#b3261e;min-height:12px;font-size:10px}
+.promo-fine{font-size:10px;opacity:.55;line-height:1.4}.promo-fine a{text-decoration:underline}
+.promo-no{opacity:.55;font-size:10px;text-align:left;padding:0}.promo-no:hover{opacity:1}
+.promo-x{position:absolute;top:8px;right:12px;z-index:2;font-size:30px;line-height:1;background:#fafaf7;border:1px solid #000;width:34px;height:34px}
+.promo-code{border:2px dashed #000;padding:14px;text-align:center;font-size:20px;letter-spacing:.18em;font-weight:700;background:var(--bone)}
+@media(max-width:1024px){.h2-strip{grid-template-columns:1fr;gap:18px;padding:24px 20px}.h2-right{max-width:none}.street-grid{grid-template-columns:repeat(2,1fr)}.street-grid img{height:240px}.street-grid img:nth-child(2){border-right:0}.street-grid img:nth-child(-n+2){border-bottom:1px solid #000}}
+@media(max-width:700px){.promo-box{grid-template-columns:1fr}.promo-img{display:none}.promo-body{padding:26px 20px 20px}.h2-wear{display:none}.h2-img img{min-height:230px}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.promo,.promo-box{transition:none}}
+</style>
+<style>
+:root{--grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.h2-img::before,.lookbook-img::before,.street-grid::after,.promo-img::after{content:'';position:absolute;inset:0;background:var(--grain);opacity:.16;mix-blend-mode:overlay;pointer-events:none;z-index:1}
+.street-grid{position:relative}.promo-img{position:relative}.lookbook-img{position:relative}
+.h2-img img,.lookbook-img>img,.street-grid img{filter:contrast(1.06) saturate(1.06)}
+.product-card{transition:box-shadow .35s,transform .35s}
+.product-card:hover{box-shadow:0 18px 40px -18px rgba(0,0,0,.45);z-index:2}
+.product-img img{mix-blend-mode:normal}
+.product-line{font-size:11px;opacity:.6;margin-top:3px;font-style:italic}
+.cap-meta span:first-child{font-weight:700}
+.anton,.h2-slogan{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif}
+.footer-col a{text-decoration:underline;text-underline-offset:3px}
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:76px}::selection{background:#0a0a0a;color:#fafaf7}
+:focus-visible{outline:2px solid #0a0a0a;outline-offset:2px}footer :focus-visible{outline-color:#fafaf7}
+.skip{position:absolute;left:-999px;top:8px;background:#0a0a0a;color:#fff;padding:10px 14px;z-index:300}.skip:focus{left:8px}
+.menu-btn{display:none;border:1px solid #0a0a0a;padding:8px 12px;font-size:11px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #0a0a0a;background:var(--white)}
+.trust div{padding:16px 22px;border-right:1px solid #0a0a0a;display:grid;gap:3px}.trust div:last-child{border-right:0}
+.trust strong{font-family:'Anton',Impact,'Arial Black',sans-serif;font-weight:400;letter-spacing:.04em;font-size:15px}.trust span{font-family:'Space Mono',ui-monospace,monospace;font-size:10px;opacity:.65}
+.qv-open{cursor:pointer}.product-name.qv-open:hover{text-decoration:underline;text-underline-offset:3px}
+.fs-bar{height:4px;background:#e2dfd8;margin-top:2px}.fs-bar i{display:block;height:100%;width:0;background:#0a0a0a;transition:width .4s}
+.qv{position:fixed;inset:0;z-index:130;display:grid;place-items:center;padding:16px;opacity:0;transition:opacity .2s}.qv[hidden]{display:none}.qv.show{opacity:1}
+#sg{z-index:140}.qv-bg{position:absolute;inset:0;background:rgba(10,10,10,.7);backdrop-filter:blur(5px)}
+.qv-box{position:relative;display:grid;grid-template-columns:1.1fr .9fr;width:min(900px,100%);max-height:92vh;overflow:auto;background:var(--white);border:1px solid #0a0a0a}
+.sg-box{grid-template-columns:1fr;width:min(520px,100%)}
+.qv-img{background:#eeede9;display:grid;place-items:center;min-height:380px}.qv-img img{width:100%;max-height:78vh;object-fit:contain;padding:16px}
+.qv-info{padding:34px 30px;display:flex;flex-direction:column;gap:12px;justify-content:center}
+.qv-info h3{font-size:clamp(30px,4vw,44px);line-height:.95;text-transform:uppercase}.qv-info p{font-size:14px;line-height:1.55;opacity:.85}
+.qv-price{font-size:20px;font-weight:700}.qv-line{font-style:italic;opacity:.7}
+.qv-size{display:flex;justify-content:space-between;align-items:center;font-size:11px}.qv-guide{text-decoration:underline;font-size:11px}
+.qv-info select{padding:13px;border:1px solid #0a0a0a;background:#fff;font-family:'Space Mono',monospace}
+.qv-facts{list-style:none;font-family:'Space Mono',monospace;font-size:10px;opacity:.65;display:grid;gap:4px;margin-top:4px}
+.qv-x{position:absolute;top:8px;right:10px;z-index:3;font-size:28px;line-height:1;background:#fafaf7;border:1px solid #0a0a0a;width:34px;height:34px}
+.faq{max-width:860px;margin:0 auto;padding:10px 24px 40px}
+.faq details{border-bottom:1px solid #0a0a0a}.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-family:'Anton',Impact,'Arial Black',sans-serif;font-size:20px;letter-spacing:.02em;text-transform:uppercase;display:flex;justify-content:space-between}
+.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:'+';font-family:'Space Mono',monospace;transition:transform .2s}.faq details[open] summary:after{content:'–'}
+.faq p{padding:0 0 22px;line-height:1.65;max-width:68ch;opacity:.8}.faq a{text-decoration:underline}
+.promo-img img{object-position:50% 18%}
+.lookbook-img>img{object-position:50% 35%}@media(max-width:900px){.lookbook{grid-template-columns:1fr}.lookbook-img{min-height:62vh}}
+@media(max-width:900px){.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid #0a0a0a}.qv-box{grid-template-columns:1fr}.qv-img{min-height:260px}}
+@media(max-width:700px){.menu-btn{display:block}nav{position:absolute;left:0;right:0;top:100%;background:var(--white);border-bottom:1px solid #0a0a0a;flex-direction:column;gap:0;display:none}nav.open{display:flex}nav a{padding:16px 20px;border-top:1px solid #ddd}header{position:sticky}.h2-img img{min-height:300px;object-position:52% 50%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.qv{transition:none}}
+</style>
+<style>
+.product-img{aspect-ratio:4/5!important;background:#eeede9}
+.product-img img{object-fit:cover!important;padding:0!important}
+.product-card:hover .product-img img{transform:scale(1.04)}
+.cart-item img{aspect-ratio:4/5!important;object-fit:cover!important;padding:0!important;width:72px}
+.qv-img{background:#eeede9}.qv-img img{object-fit:cover!important;padding:0!important;width:100%;max-height:80vh}
+.filters{align-items:stretch}
+.sort{margin-left:auto;display:flex;align-items:center;gap:8px;padding:0 16px;font-size:10px;border-left:1px solid #0a0a0a}
+.sort select{border:0;background:transparent;font-family:inherit;font-size:11px;padding:10px 4px;cursor:pointer}
+.add-btn:disabled{opacity:.45;cursor:not-allowed}
+.cart-suggest{padding:0 20px}
+.sg-t{font-size:10px;letter-spacing:.12em;padding:14px 0 8px;border-top:1px solid #0a0a0a;margin-top:8px}
+.sg-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-bottom:14px}
+.sg-item{text-align:left;display:grid;gap:3px;font-size:12px}.sg-item img{height:120px;object-fit:cover;object-position:50% 45%;width:100%;background:#eeede9}.sg-item .sg-n{font-weight:700;text-transform:uppercase;font-size:11px}
+@media(max-width:700px){.product-actions{grid-template-columns:1fr!important}.product-name{font-size:15px}.sort{margin-left:0;border-left:0;padding:0 12px}}
+</style>
+<style>
+:root{--hh:78px}
+html{scroll-padding-top:calc(var(--hh) + 80px)}
+body{font-size:16px;line-height:1.5}
+.mono{font-size:12px}
+/* announcement strip */
+.ticker{padding:11px 0}.ticker span{font-size:12px;letter-spacing:.16em}
+/* header */
+header{padding:16px 36px}
+.logo img{height:46px!important}
+nav{gap:44px}nav a{font-size:13px;letter-spacing:.16em;font-weight:700;padding:8px 0}
+.cart-btn{padding:13px 24px;font-size:13px}
+/* hero */
+.h2-tag{font-size:12px;padding:8px 14px;top:22px;left:26px}.h2-wear{font-size:11px;right:26px;bottom:18px}
+.h2-strip{padding:44px 40px;gap:48px}.h2-logo{height:clamp(84px,9vw,150px)}
+.h2-slogan{font-size:clamp(42px,5.7vw,104px);line-height:.92}
+.h2-right{max-width:380px;gap:22px}.h2-right p{font-size:17px;line-height:1.55;opacity:.85}
+.hero-cta{background:#fafaf7;color:#0a0a0a;border-color:#fafaf7;padding:19px 32px;font-size:13px;font-weight:700;text-align:center}
+.hero-cta:hover{background:transparent;color:#fafaf7}
+/* trust strip */
+.trust div{padding:26px 36px;gap:5px}
+.trust strong{font-size:20px;letter-spacing:.05em}.trust span{font-size:12px;opacity:.7}
+/* filter / category strip */
+.filters{top:var(--hh);padding:0 0 0 36px;min-height:68px;align-items:stretch;border-top:0;box-shadow:0 1px 0 #0a0a0a}
+.filter-btn{font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:13px!important;letter-spacing:.12em;font-weight:700;padding:0 30px!important;white-space:nowrap;border-right:1px solid #0a0a0a;position:relative}
+.filter-btn.active{background:#0a0a0a;color:#fafaf7}
+.filter-btn:not(.active):hover{background:#eeede9}
+.sort{font-size:12px;padding:0 28px;gap:12px}.sort select{font-size:13px;font-weight:700;padding:14px 4px}
+/* section heads + cards */
+.section-head{padding:34px 36px 28px;background:#fafaf7}
+.section-head h3{font-size:clamp(34px,3.4vw,54px);line-height:1;letter-spacing:.01em}
+.section-head p{font-size:12px;opacity:.65}
+.product-card{position:relative}
+.product-img{position:relative;overflow:hidden}
+.product-img img{transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.product-tag{font-size:11px;padding:6px 10px;top:16px;left:16px;letter-spacing:.12em}
+.product-info{padding:20px 22px 26px;gap:6px}
+.product-top{align-items:baseline}
+.product-name{font-family:'Anton',Impact,'Arial Narrow Bold','Arial Black',sans-serif;font-weight:400;font-size:clamp(20px,1.6vw,26px);line-height:1;letter-spacing:.015em;margin:0}
+.product-price{font-size:16px}
+.product-color{font-size:12px;margin-top:2px;opacity:.65}
+.product-line{font-size:14px;opacity:.7;margin-top:2px}
+.quick-add{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(250,250,247,.96);backdrop-filter:blur(6px);border:1px solid #0a0a0a;padding:12px;display:grid;gap:9px;transform:translateY(calc(100% + 16px));transition:transform .35s cubic-bezier(.16,1,.3,1);z-index:3}
+.quick-add .mono{font-size:11px;opacity:.7;text-align:center}
+.qa-sizes{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.qa-sizes button{flex:1;min-width:46px;padding:11px 8px;border:1px solid #0a0a0a;font-family:'Space Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:700;letter-spacing:.06em;background:transparent;cursor:pointer}
+.qa-sizes button:hover{background:#0a0a0a;color:#fafaf7}
+.qa-plus{display:none;position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:50%;background:#0a0a0a;color:#fff;font-size:22px;line-height:40px;text-align:center;z-index:2}
+@media(hover:hover){.product-card:hover .quick-add,.product-card:focus-within .quick-add{transform:none}}
+@media(hover:none){.quick-add{display:none}.qa-plus{display:block}}
+/* details + footer */
+.detail-copy h4{font-size:clamp(34px,3.6vw,56px)}
+.detail-copy li{font-size:16px}
+footer{padding:64px 36px 28px;gap:36px}
+.footer-top{gap:40px;padding-bottom:40px}
+.footer-col h5{font-size:12px;margin-bottom:18px}
+.footer-col ul{font-size:15px;gap:11px}
+.footer-pay{display:flex;flex-wrap:wrap;gap:10px;font-size:11px}
+.footer-pay span{border:1px solid #333;padding:7px 12px;opacity:.75}
+.footer-bottom{font-size:11px}
+.footer-col input{font-size:14px!important;padding:12px!important}
+/* quick view + cart text */
+.qv-info .mono{font-size:12px}
+.qv-info select{font-size:14px}
+.cart-item h4{font-size:15px}
+.cart-row{font-size:15px}
+/* big screens: scale the whole layout so strips never look thin */
+@media(min-width:1800px){html{zoom:1.12}}
+@media(min-width:2300px){html{zoom:1.3}}
+/* tablet / phone */
+@media(max-width:900px){header{padding:14px 20px}.logo img{height:38px!important}.h2-strip{padding:30px 22px}.trust div{padding:18px 20px}.trust strong{font-size:16px}.trust span{font-size:11px}.section-head{padding:26px 20px 20px}.filters{padding-left:12px;min-height:60px}.filter-btn{padding:0 22px!important;font-size:12px!important}.product-info{padding:14px 14px 20px}footer{padding:44px 20px 24px}}
+@media(max-width:700px){nav a{font-size:14px}.product-name{font-size:19px}.product-price{font-size:14px}.product-line{display:none}.filters{top:var(--hh)}.sort{padding:0 14px}}
+</style>
+<style>
+.js .rv:not(.in){opacity:0;transform:translateY(22px)}
+.rv{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.product-img img.alt{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+@media(hover:hover){.product-card:hover .product-img img.alt{opacity:1}}
+.qv-gal{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start}
+.qv-main{position:relative;background:#eeede9;flex:1;display:grid;place-items:center;min-height:380px}
+.qv-main img{width:100%;max-height:74vh;object-fit:cover}
+.qv-main img.model{object-fit:cover;height:100%;max-height:none}
+.qv-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid #0a0a0a;background:rgba(250,250,247,.92);font-size:26px;line-height:1;cursor:pointer;z-index:2}
+.qv-nav[hidden]{display:none}.qv-prev{left:10px}.qv-next{right:10px}
+.qv-thumbs{display:flex;gap:6px;padding:8px;background:#fafaf7;border-top:1px solid #0a0a0a}.qv-thumbs:empty{display:none}
+.qv-thumbs button{width:64px;height:80px;border:1px solid transparent;opacity:.6;padding:0;background:#eeede9}.qv-thumbs button.on{border-color:#0a0a0a;opacity:1}
+.qv-thumbs img{width:100%;height:100%;object-fit:cover}
+.qv-acc{border-top:1px solid #0a0a0a}.qv-acc:last-of-type{border-bottom:1px solid #0a0a0a}
+.qv-acc summary{cursor:pointer;list-style:none;padding:14px 0;font-family:'Space Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between}
+.qv-acc summary::-webkit-details-marker{display:none}.qv-acc summary:after{content:'+'}.qv-acc[open] summary:after{content:'–'}
+.qv-acc p{padding:0 0 14px;font-size:14px;line-height:1.55;opacity:.8}
+.statement{background:#0a0a0a;color:#fafaf7;overflow:hidden;border-block:1px solid #0a0a0a;padding:30px 0}
+.statement-track{display:flex;gap:64px;white-space:nowrap;width:max-content;animation:marquee 46s linear infinite}
+.statement span{font-family:'Anton',Impact,'Arial Black',sans-serif;font-size:clamp(64px,10.5vw,170px);line-height:1;color:transparent;-webkit-text-stroke:1.5px #fafaf7;letter-spacing:.01em}
+.statement span.fill{color:#fafaf7;-webkit-text-stroke:0}
+.crew-band{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:84px 40px;background:#e9e6df;border-block:1px solid #0a0a0a}
+.crew-band h3{font-size:clamp(48px,7vw,112px);line-height:.9;margin:10px 0 16px;text-transform:uppercase;font-weight:400}
+.crew-band p{max-width:46ch;font-size:17px;line-height:1.55;opacity:.8}
+.crew-band form{display:grid;grid-template-columns:1fr auto;gap:0;border:1px solid #0a0a0a;background:#fafaf7}
+.crew-band input{padding:22px 22px;border:0;font-family:'Space Mono',ui-monospace,monospace;font-size:14px;background:transparent;min-width:0}
+.crew-band button{background:#0a0a0a;color:#fafaf7;padding:0 34px;font-family:'Anton',Impact,'Arial Black',sans-serif;font-size:20px;letter-spacing:.05em;cursor:pointer}
+.crew-fine{grid-column:1/-1;border-top:1px solid #0a0a0a;padding:12px 18px;font-size:10px;opacity:.6;text-transform:none;letter-spacing:.04em}
+.crew-ok{grid-column:1/-1;padding:30px;font-size:clamp(26px,3vw,40px);background:#0a0a0a;color:#fafaf7}.crew-band form .mono{grid-column:1/-1;padding:12px 18px}
+@media(max-width:900px){.crew-band{grid-template-columns:1fr;padding:56px 22px;gap:28px}.qv-main{min-height:300px}}
+@media(prefers-reduced-motion:reduce){.rv,.js .rv:not(.in){opacity:1!important;transform:none!important;transition:none}.statement-track{animation:none}}
+</style>
+</head>
+<body id="top"><a class="skip" href="#shop">Skip to shop</a><div class="resv-cue">REP THE 73 — RESERVOIR — NORTHSIDE</div>
+
+<div class="ticker"><div class="ticker-track">
+  <span>NEVER BLEND IN. — DESIGNED IN RESERVOIR, 3073 — GILBERT / HENTY / BROADWAY — JOIN THE CREW: 15% OFF, CODE NEVERBLEND15 — HEAVY. NO FILLER. —</span>
+  <span>NEVER BLEND IN. — DESIGNED IN RESERVOIR, 3073 — GILBERT / HENTY / BROADWAY — JOIN THE CREW: 15% OFF, CODE NEVERBLEND15 — HEAVY. NO FILLER. —</span>
+  <span>NEVER BLEND IN. — DESIGNED IN RESERVOIR, 3073 — GILBERT / HENTY / BROADWAY — JOIN THE CREW: 15% OFF, CODE NEVERBLEND15 — HEAVY. NO FILLER. —</span>
+</div></div>
+
+<header>
+  <a class="logo" href="#top" aria-label="RES BOYS home"><img src="assets/logo_black.png" alt="RES BOYS" style="height:36px;width:auto"></a>
+  <button class="menu-btn mono" id="menuBtn" aria-expanded="false" aria-controls="mainNav">MENU</button>
+  <nav id="mainNav" aria-label="Main">
+    <a href="#shop">SHOP</a>
+    <a href="#lookbook">LOOKBOOK</a>
+    <a href="#story">STORY</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="header-actions">
+    <button class="cart-btn" id="openCart"><span>CART</span><span id="cartCount" aria-live="polite">[0]</span></button>
+  </div>
+</header>
+
+<section class="hero2">
+  <div class="h2-img">
+    <img src="assets/hero_crew_1600.jpg" srcset="assets/hero_crew_1600.jpg 1600w, assets/hero_crew.jpg 3200w" sizes="100vw" width="3200" height="1274" alt="Four RES BOYS crew members facing away from the camera in the Gilbert, Darebin and Summerhill hoodies and the Settlement work jacket" fetchpriority="high" decoding="async">
+    <span class="h2-tag mono">SS26 — THE 73</span>
+    <span class="h2-wear mono">GILBERT HOODIE · DAREBIN HOODIE · SUMMERHILL HOODIE · SETTLEMENT JACKET</span>
+  </div>
+  <div class="h2-strip">
+    <img class="h2-logo" src="assets/logo_white.png" alt="RES BOYS">
+    <h1 class="h2-slogan anton">NEVER BLEND IN.</h1>
+    <div class="h2-right"><p>Designed in Reservoir, 3073. Heavy fleece, hard cargos, caps that sit right. Made for the ones who walk these streets — and anyone who’d rather not blend in.</p><a class="hero-cta" href="#shop">SHOP THE DROP →</a></div>
+  </div>
+</section>
+<div class="trust"><div><strong>FREE SHIPPING</strong><span>On orders over $200</span></div><div><strong>14-DAY RETURNS</strong><span>Unworn, tags on</span></div><div><strong>SECURE CHECKOUT</strong><span>Card, Apple Pay, Google Pay</span></div><div><strong>SHIPPED FROM MELBOURNE</strong><span>Australia-wide</span></div></div>
+
+
+
+
+
+<main id="shop" tabindex="-1">
+<div class="filters" id="filters">
+  <button class="filter-btn active" data-filter="all">ALL [19]</button>
+  <button class="filter-btn" data-filter="hoodies">HOODIES [5]</button>
+  <button class="filter-btn" data-filter="tees">T-SHIRTS [4]</button>
+  <button class="filter-btn" data-filter="jackets">JACKETS & VESTS [2]</button>
+  <button class="filter-btn" data-filter="bottoms">BOTTOMS [4]</button>
+  <button class="filter-btn" data-filter="caps">CAPS [4]</button>
+  <label class="sort mono"><span>SORT</span><select id="sortSel" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+</div>
+  <div id="productSections"></div>
+</main>
+
+<section class="statement" aria-hidden="true"><div class="statement-track"><span>NEVER BLEND IN</span><span class="fill">RES BOYS</span><span>RESERVOIR 3073</span><span class="fill">NEVER BLEND IN</span><span>NEVER BLEND IN</span><span class="fill">RES BOYS</span><span>RESERVOIR 3073</span><span class="fill">NEVER BLEND IN</span></div></section>
+<section class="lookbook" id="lookbook">
+  <div class="lookbook-img">
+    <img src="assets/crew_broadway.jpg" alt="Two RES BOYS crew members in black hoodies standing on Broadway, Reservoir at sunset" loading="lazy" decoding="async">
+    <div class="lookbook-overlay"></div>
+    <div class="lookbook-text">
+      <div class="mono">SS26 — BROADWAY, 3073</div>
+      <h2>NEVER<br>BLEND IN.</h2>
+      <div style="margin-top:12px;font-size:13px;max-width:34ch;line-height:1.4">Gilbert. Henty. Broadway. Same blocks, same faces, never the same fit twice.</div>
+    </div>
+  </div>
+  <div class="lookbook-details">
+    <div class="detail-grid">
+      <img src="assets/detail_embroidery.jpg" alt="RES BOYS 3D embroidery">
+      <img src="assets/detail_zip.jpg" alt="3073 — Reservoir, Victoria">
+      <img src="assets/detail_label.jpg" alt="RES BOYS woven neck label">
+      <img src="assets/detail_tag.jpg" alt="RES BOYS woven tab">
+    </div>
+    <div class="detail-copy">
+      <div class="mono">Never Blend In — Est. 2026 — Reservoir</div>
+      <h4>DETAILS THAT DON'T QUIT.</h4>
+      <ul>
+        <li><span>01</span><div><strong>Embroidery</strong><br>Raised thread you can feel. Chest and back.</div></li>
+        <li><span>02</span><div><strong>Woven labels</strong><br>RES BOYS woven into the neck of every piece. Know who made it.</div></li>
+        <li><span>03</span><div><strong>Branded tabs</strong><br>A small woven tab on the outside. Subtle, but you’ll know.</div></li>
+        <li><span>04</span><div><strong>3073</strong><br>Designed in Reservoir. Worn everywhere.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="story" style="background:var(--white)">
+  <div class="section-head"><h3>REP THE 73.</h3><p class="mono">Reservoir 3073 / Australia-wide</p></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--black)">
+    <div style="padding:28px;border-right:1px solid var(--black)">
+      <div class="mono">The 73</div>
+      <p style="margin-top:14px;font-size:clamp(18px,2.2vw,26px);line-height:1.1;font-weight:600;letter-spacing:-.02em">RES BOYS is a crew before it’s a label. Gilbert, Henty, Broadway — same streets, same faces, never the same fit. We make what we actually wear: heavy, simple, stamped so you know exactly who it is.</p>
+      <p style="margin-top:16px;line-height:1.6;opacity:.75">Every piece is named after a street we know. From here? You’ll recognise them all. Not from here? Pull up.</p>
+    </div>
+    <div style="padding:28px;background:var(--bone);display:grid;gap:18px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="border:1px solid var(--black);padding:14px"><div class="mono">Fabric</div><div style="font-weight:700;margin-top:6px">460 GSM Premium Fleece / 100% Cotton Tee</div></div>
+        <div style="border:1px solid var(--black);padding:14px"><div class="mono">Fit</div><div style="font-weight:700;margin-top:6px">Oversized hoodies / Regular tee / Relaxed bottoms</div></div>
+      </div>
+      <div style="border:1px solid var(--black);padding:14px"><div class="mono">Shipping — Australia Wide</div><div style="display:flex;justify-content:space-between;margin-top:8px"><span>Standard $10 / Express $18</span><span style="font-weight:700">Free over $200 AUD</span></div></div>
+      <img src="assets/model_female.jpg" alt="RES BOYS crew member in a white snapback and bone hoodie beside a graffiti wall" loading="lazy" decoding="async" style="border:1px solid var(--black);height:360px;width:100%;object-fit:cover;object-position:50% 22%">
+    </div>
+  </div>
+</section>
+
+<section class="crew-band" id="crew">
+  <div><div class="mono">THE LIST</div><h3 class="anton">JOIN THE CREW.</h3><p>First access to every drop, plus 15% off your first order. No spam — just the drops.</p></div>
+  <form id="crewForm" novalidate><input type="email" required placeholder="YOUR EMAIL" autocomplete="email" aria-label="Email address"><button type="submit">JOIN →</button><div class="mono crew-fine">By joining you agree to receive marketing emails. Unsubscribe anytime. <a href="policies.html#privacy">Privacy</a>.</div></form>
+</section>
+
+<section class="section" id="faq">
+  <div class="section-head"><h3>FAQ</h3><p class="mono">Straight answers</p></div>
+  <div class="faq">
+    <details><summary>How do the sizes fit?</summary><p>Hoodies are cut oversized, tees are a regular fit and bottoms are relaxed. Want it closer to the body? Size down. Between sizes or unsure? Email <a href="mailto:crew@resboys.com.au">crew@resboys.com.au</a> and we’ll sort you out.</p></details>
+    <details><summary>How long does shipping take?</summary><p>Standard is $10 (3–5 business days) and Express is $18 (1–2 business days). Free shipping on orders over $200 after discounts. We ship Australia-wide and email tracking when your order leaves.</p></details>
+    <details><summary>Can I return or exchange something?</summary><p>Yes — within 14 days of delivery for unworn items with tags on. Faulty or wrong item? Email us and we’ll fix it at no cost to you. Full details on the <a href="policies.html#returns">returns page</a>.</p></details>
+    <details><summary>How does the 15% off code work?</summary><p>Join the crew and <strong>NEVERBLEND15</strong> is applied to your cart automatically. It’s 15% off one order per customer and can’t be combined with other offers.</p></details>
+    <details><summary>When’s the next drop?</summary><p>Crew members hear first. Join the list and new drops land in your inbox before they hit the site.</p></details>
+    <details><summary>Do you ship overseas?</summary><p>Not yet — Australia only for now. Join the crew and you’ll hear first when that changes.</p></details>
+    <details><summary>Where is my order?</summary><p>You’ll get a confirmation straight after checkout and tracking once it ships. Anything else, email <a href="mailto:crew@resboys.com.au">crew@resboys.com.au</a> with your order number.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo"><img src="assets/logo_white.png" alt="RES BOYS" style="height:96px;width:auto"></div>
+    <div class="footer-col"><h5>SHOP</h5><ul><li><a href="#shop">Hoodies</a></li><li><a href="#shop">T-Shirts</a></li><li><a href="#caps">Lids</a></li><li><a href="#shop">Jackets & Vests</a></li><li><a href="#shop">Bottoms</a></li></ul></div>
+    <div class="footer-col"><h5>INFO</h5><ul><li><a href="policies.html#shipping">Shipping</a></li><li><a href="policies.html#returns">Returns</a></li><li><a href="policies.html#privacy">Privacy</a></li><li><a href="policies.html#terms">Terms</a></li><li>Contact: crew@resboys.com.au</li><li>Melbourne, VIC 3073</li></ul></div>
+    <div class="footer-col"><h5>JOIN THE CREW</h5><ul><li><a href="https://instagram.com/resboys" rel="noopener" target="_blank">Instagram @resboys</a></li><li>First access to every drop + 15% off your first order</li><li><form id="footerForm" style="display:flex;gap:6px;margin-top:6px"><input type="email" required placeholder="email" aria-label="Email" style="background:transparent;border:1px solid #444;padding:8px 10px;color:#fff;width:100%"><button class="mono" style="border:1px solid #fff;padding:0 12px;color:#fff">JOIN</button></form></li></ul></div>
+  </div>
+  <div class="footer-pay mono"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>GOOGLE PAY</span><span>AFTERPAY*</span></div>
+  <div class="footer-bottom"><span>© 2026 RES BOYS — NEVER BLEND IN. EST. 2026</span><span>RESERVOIR 3073 — ALL PRICES IN AUD</span></div>
+</footer>
+
+<div class="qv" id="qv" hidden role="dialog" aria-modal="true" aria-label="Product quick view">
+  <div class="qv-bg" data-qvclose></div>
+  <div class="qv-box"><button class="qv-x" data-qvclose aria-label="Close">×</button>
+    <div class="qv-img qv-gal"><div class="qv-main"><img id="qvImg" alt=""><button class="qv-nav qv-prev" id="qvPrev" type="button" aria-label="Previous image" hidden>‹</button><button class="qv-nav qv-next" id="qvNext" type="button" aria-label="Next image" hidden>›</button></div><div class="qv-thumbs" id="qvThumbs"></div></div>
+    <div class="qv-info">
+      <div class="mono" id="qvCat"></div><h3 class="anton" id="qvName"></h3><div class="mono" id="qvVar"></div><div class="qv-price" id="qvPrice"></div>
+      <p id="qvLine" class="qv-line"></p><p id="qvDesc"></p>
+      <div class="qv-size"><span class="mono">SIZE</span><button class="qv-guide mono" id="qvGuide" type="button">SIZE GUIDE</button></div>
+      <select id="qvSize" aria-label="Size"></select>
+      <button class="checkout-btn" id="qvAdd" type="button">ADD TO CART →</button>
+      <details class="qv-acc"><summary>Fit &amp; sizing</summary><p id="qvFitLong"></p></details>
+      <details class="qv-acc"><summary>Delivery &amp; returns</summary><p>Standard $10 (3–5 business days), Express $18 (1–2). Free shipping over $200. 14-day returns on unworn items with tags on.</p></details>
+      <ul class="qv-facts"><li>Free shipping over $200 · 14-day returns</li><li id="qvFit"></li></ul>
+    </div></div></div>
+<div class="qv" id="sg" hidden role="dialog" aria-modal="true" aria-label="Size guide">
+  <div class="qv-bg" data-sgclose></div>
+  <div class="qv-box sg-box"><button class="qv-x" data-sgclose aria-label="Close">×</button>
+    <div class="qv-info" style="padding:34px 30px">
+      <h3 class="anton">SIZE GUIDE</h3>
+      <p><strong>Hoodies</strong> — cut oversized. True size for the boxy look; size down for a closer fit.</p>
+      <p><strong>T-shirts</strong> — regular fit. True to size.</p>
+      <p><strong>Jackets &amp; vests</strong> — cut for layering over a hoodie. Between sizes? Size up.</p>
+      <p><strong>Bottoms</strong> — relaxed fit. True to size; between sizes, size down.</p>
+      <p><strong>Snapbacks</strong> — one size.</p>
+      <p class="mono" style="font-size:11px;opacity:.7">Still unsure? Email crew@resboys.com.au and we’ll sort you out.</p>
+    </div></div></div>
+<div class="promo" id="promo" role="dialog" aria-modal="true" aria-labelledby="promoTitle" hidden>
+  <div class="promo-bg" data-close></div>
+  <div class="promo-box">
+    <button class="promo-x" data-close aria-label="Close">×</button>
+    <div class="promo-img"><img src="assets/model_male.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="promo-body" id="promoBody">
+      <img src="assets/logo_black.png" alt="RES BOYS" style="height:34px;width:auto;max-width:none;margin-bottom:14px;align-self:flex-start">
+      <h2 id="promoTitle" class="anton">15% OFF<br>YOUR FIRST DROP.</h2>
+      <p>Join the crew for first access to every drop and 15% off your first order. No spam — just the drops. Never blend in.</p>
+      <form id="promoForm" novalidate><input type="email" id="promoEmail" required placeholder="YOUR EMAIL" autocomplete="email" aria-label="Email address"><button type="submit" class="promo-go">UNLOCK 15% →</button></form>
+      <div class="mono promo-err" id="promoErr" role="alert"></div>
+      <div class="promo-fine">By joining you agree to receive marketing emails from RES BOYS. Unsubscribe anytime. See our <a href="policies.html#privacy">privacy policy</a>.</div>
+      <button class="promo-no mono" data-close>NO THANKS, I'LL PAY FULL PRICE</button>
+    </div>
+  </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-head"><h3>CART</h3><button id="closeCart" style="border:1px solid var(--black);padding:6px 10px" class="mono">CLOSE X</button></div>
+  <div class="cart-items" id="cartItems"><div class="mono" style="opacity:.6;padding:20px;text-align:center">Cart empty. Never blend in.</div></div>
+  <div class="cart-suggest" id="cartSuggest"></div>
+  <div class="cart-foot">
+    <div class="cart-promo"><input id="codeInput" placeholder="DISCOUNT CODE" aria-label="Discount code" autocapitalize="characters"><button id="codeApply" class="mono">APPLY</button></div>
+    <div class="mono" id="codeMsg" style="font-size:10px;min-height:12px"></div>
+    <div class="cart-row"><span>Subtotal</span><span id="subTotal">$0.00</span></div>
+    <div class="cart-row" id="discRow" style="display:none;color:#1d6b3a"><span id="discLabel">Discount</span><span id="discAmt"></span></div>
+    <div class="cart-row"><span>Shipping</span><span id="shipNote">Calculated at checkout</span></div>
+    <div class="mono" style="font-size:9px;text-align:right;opacity:.55">Prices in AUD, GST included where applicable</div>
+    <div class="cart-row total"><span>Total (excl. shipping)</span><span id="cartTotal">$0.00</span></div>
+    <div class="mono" id="freeShipNote" style="font-size:10px;text-align:center"></div><div class="fs-bar"><i id="fsFill"></i></div>
+    <button class="checkout-btn" id="checkoutBtn">CHECKOUT →</button>
+    <div class="mono" style="font-size:9px;text-align:center;opacity:.6">Secure checkout • Apple Pay / Card • AUD</div>
+  </div>
+</div>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-bg" id="modalBg"></div>
+  <div class="modal-box">
+    <div class="modal-head"><h3>TEST CHECKOUT — AUD</h3><button id="closeModal" class="mono" style="border:1px solid var(--black);padding:6px 10px">CLOSE X</button></div>
+    <div class="modal-body" id="modalBody">
+      <div class="order-summary" id="orderSummary"></div>
+      <form id="checkoutForm" style="display:grid;gap:14px">
+        <div class="form-grid">
+          <label>First Name<input required name="first" placeholder="First name"></label>
+          <label>Last Name<input required name="last" placeholder="Last name"></label>
+          <label class="full">Email<input required type="email" name="email" placeholder="you@email.com"></label>
+          <label class="full">Address<input required name="address" placeholder="123 Smith St, Reservoir VIC 3073"></label>
+          <label>City<input required name="city" value="Melbourne"></label>
+          <label>Postcode<input required name="postcode" placeholder="3073"></label>
+          <label class="full">Shipping<select name="shipping"></select></label>
+        </div>
+        <button class="pay-btn" type="submit">PAY <span id="payTotal"></span> →</button><div id="liveModeBadge" class="mono" style="margin-top:8px;padding:6px 8px;border:1px dashed #000;background:#fff"></div>
+        <div class="mono" style="font-size:9px;opacity:.6;text-align:center">TEST MODE — no payment is taken and no card details are collected. Live checkout is handled by Shopify / Stripe.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+// Products - AUD pricing
+const PRODUCTS = [
+  {id:'cap_black', name:'HENTY SNAPBACK', variant:'Black', category:'caps', group:'CAPS', price:59.95, img:'assets/cap_black.jpg', tag:'NEW'},
+  {id:'cap_charcoal', name:'RUTHVEN SNAPBACK', variant:'Charcoal', category:'caps', group:'CAPS', price:59.95, img:'assets/cap_charcoal.jpg', tag:''},
+  {id:'cap_olive', name:'EDWARDES SNAPBACK', variant:'Olive', category:'caps', group:'CAPS', price:59.95, img:'assets/cap_olive.jpg', tag:''},
+  {id:'cap_white', name:'DUNDAS SNAPBACK', variant:'White', category:'caps', group:'CAPS', price:59.95, img:'assets/cap_white.jpg', tag:'LIMITED'},
+  {id:'hoodie_black', name:'GILBERT HOODIE', variant:'Black', category:'hoodies', group:'HOODIES', price:149.95, img:'assets/hoodie_black.jpg', tag:'CREW FAVE'},
+  {id:'hoodie_charcoal', name:'BROADWAY HOODIE', variant:'Charcoal', category:'hoodies', group:'HOODIES', price:149.95, img:'assets/hoodie_charcoal.jpg', tag:''},
+  {id:'hoodie_olive', name:'DAREBIN HOODIE', variant:'Olive', category:'hoodies', group:'HOODIES', price:149.95, img:'assets/hoodie_olive.jpg', tag:''},
+  {id:'hoodie_bone', name:'SUMMERHILL HOODIE', variant:'Bone', category:'hoodies', group:'HOODIES', price:149.95, img:'assets/hoodie_bone.jpg', tag:''},
+  {id:'hoodie_back_black', name:'CUTHBERT HOODIE', variant:'Black — Large Back Print', category:'hoodies', group:'HOODIES', price:149.95, img:'assets/hoodie_back_black.jpg', tag:'BACK PRINT'},
+  {id:'tee_black', name:'PLENTY TEE', variant:'Black', category:'tees', group:'T-SHIRTS', price:69.95, img:'assets/tee_black.jpg', tag:''},
+  {id:'tee_charcoal', name:'CHEDDAR TEE', variant:'Charcoal', category:'tees', group:'T-SHIRTS', price:69.95, img:'assets/tee_charcoal.jpg', tag:''},
+  {id:'tee_olive', name:'MERRI TEE', variant:'Olive', category:'tees', group:'T-SHIRTS', price:69.95, img:'assets/tee_olive.jpg', tag:''},
+  {id:'tee_white', name:'HIGH ST TEE', variant:'White', category:'tees', group:'T-SHIRTS', price:69.95, img:'assets/tee_white.jpg', tag:''},
+  {id:'jacket_work', name:'SETTLEMENT WORK JACKET', variant:'Black', category:'jackets', group:'JACKETS & VESTS', price:199.95, img:'assets/jacket_work.jpg', tag:'HEAVY DUTY'},
+  {id:'vest_puffer', name:'BOLDREWOOD PUFFER', variant:'Black', category:'jackets', group:'JACKETS & VESTS', price:189.95, img:'assets/vest_puffer.jpg', tag:'HEAVY DUTY'},
+  {id:'pants_cargo_black', name:'DUNDAS CARGO', variant:'Black', category:'bottoms', group:'BOTTOMS', price:139.95, img:'assets/pants_cargo_black.jpg', tag:''},
+  {id:'pants_joggers_charcoal', name:'LAKESIDE JOGGER', variant:'Charcoal', category:'bottoms', group:'BOTTOMS', price:129.95, img:'assets/pants_joggers_charcoal.jpg', tag:''},
+  {id:'shorts_cargo_olive', name:'MERRI CARGO SHORT', variant:'Olive', category:'bottoms', group:'BOTTOMS', price:109.95, img:'assets/shorts_cargo_olive.jpg', tag:''},
+  {id:'shorts_black', name:'BROADWAY SHORT', variant:'Black', category:'bottoms', group:'BOTTOMS', price:89.95, img:'assets/shorts_black.jpg', tag:'ESSENTIAL'},
+];
+
+const SIZES = {
+  caps: ['One Size'],
+  hoodies: ['S','M','L','XL','XXL'],
+  tees: ['S','M','L','XL','XXL'],
+  jackets: ['S','M','L','XL'],
+  bottoms: ['S','M','L','XL']
+};
+
+const fmt = n => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD'}).format(n);
+
+// ===== PRODUCTION LIVE CONFIG — FILL TO GO LIVE =====
+const LIVE_CONFIG = {
+  promo: { code: 'NEVERBLEND15', percent: 15 }, // create the SAME code in Shopify (Discounts) or a Stripe coupon with ID NEVERBLEND15
+  analytics: { ga4: '', metaPixel: '' }, // GA4 measurement ID (G-XXXXXXX) and/or Meta Pixel ID — events: add_to_cart, begin_checkout, purchase
+  // On-model photos: drop files at assets/models/<product_id>_m.jpg (male) and <product_id>_f.jpg (female), then list them here.
+  // Example: modelShots: { hoodie_black: ['m','f'], cap_black: ['m','f'] }
+  modelShots: {},
+  soldOut: [], // product ids to mark SOLD OUT, e.g. ['hoodie_black']
+  newsletter: { endpoint: '' }, // Formspree / Klaviyo / Mailchimp URL — receives JSON {email, source}
+  // Set ONE to true: 'shopify' or 'stripe'
+  mode: 'demo', // 'shopify' | 'stripe' | 'demo'
+  shopify: {
+    domain: 'res-boys.myshopify.com', // e.g. res-boys.myshopify.com
+    storefrontAccessToken: 'YOUR_STOREFRONT_TOKEN', // Shopify > Apps > Develop apps > Create custom app > Storefront API
+    // Paste your Variant GIDs here after creating products in Shopify
+    // Format: gid://shopify/ProductVariant/123456789
+    variants: {
+      cap_black: '', cap_charcoal: '', cap_olive: '', cap_white: '',
+      hoodie_black: '', hoodie_charcoal: '', hoodie_olive: '', hoodie_bone: '', hoodie_back_black: '',
+      tee_black: '', tee_charcoal: '', tee_olive: '', tee_white: '',
+      jacket_work: '', vest_puffer: '',
+      pants_cargo_black: '', pants_joggers_charcoal: '', shorts_cargo_olive: '', shorts_black: ''
+    }
+  },
+  stripe: {
+    // For GitHub Pages (static) the easiest is per-product Payment Links
+    // Create 19 Payment Links in Stripe Dashboard > Payment Links > New
+    paymentLinks: {
+      cap_black: '', cap_charcoal: '', cap_olive: '', cap_white: '',
+      hoodie_black: '', hoodie_charcoal: '', hoodie_olive: '', hoodie_bone: '', hoodie_back_black: '',
+      tee_black: '', tee_charcoal: '', tee_olive: '', tee_white: '',
+      jacket_work: '', vest_puffer: '',
+      pants_cargo_black: '', pants_joggers_charcoal: '', shorts_cargo_olive: '', shorts_black: ''
+    },
+    // For multi-item cart checkout (recommended) — deploy the included Cloudflare Worker and paste URL here
+    checkoutWorkerUrl: '', // e.g. https://res-boys-checkout.yourname.workers.dev
+    // Single fallback payment link for whole cart (optional)
+    fallbackPaymentLink: ''
+  }
+};
+
+
+const MODEL=LIVE_CONFIG.modelShots||{};
+const LINES={cap_black:'Pulled low. Seen first.',cap_charcoal:'Quiet colour. Loud front.',cap_olive:'Lake-green. Park-bench approved.',cap_white:'Clean cream. Keep it clean.',hoodie_black:'The one the crew lives in.',hoodie_charcoal:'Heavy grey. Zero fuss.',hoodie_olive:'Creek-side olive.',hoodie_bone:'Bone. Hard to ignore.',hoodie_back_black:'Say it on your back.',tee_black:'Day-one black.',tee_charcoal:'Charcoal. Every day.',tee_olive:'Creek green. Low-key.',tee_white:'Fresh white. Handle with care.',jacket_work:'Work jacket. Worn hard.',vest_puffer:'Puffed up. Not backing down.',pants_cargo_black:'Pockets for everything.',pants_joggers_charcoal:'Tapered. Cuffed. Ready.',shorts_cargo_olive:'Summer, sorted.',shorts_black:'Everyday short. RES on the leg.'};
+let SORT='featured';
+const SOLD_OUT=LIVE_CONFIG.soldOut||[];
+function renderSections(){
+  const container = document.getElementById('productSections');
+  const groups = [...new Set(PRODUCTS.map(p=>p.group))];
+  container.innerHTML = groups.map(group=>{
+    const items = PRODUCTS.filter(p=>p.group===group).sort((x,y)=>SORT==='low'?x.price-y.price:SORT==='high'?y.price-x.price:0);
+    return `
+    <section class="section" data-group="${group.toLowerCase()}">
+      <div class="section-head"><h3>${group}</h3><p class="mono">${items.length} ITEMS — ${group==='HOODIES'?'HEAVY. BOXY. NORTHSIDE.':group==='T-SHIRTS'?'FIRST LAYER. LAST WORD.':group==='JACKETS & VESTS'?'LAYER UP. BE SEEN.':group==='BOTTOMS'?'BUILT FOR THE BLOCK.':'PULL IT LOW.'}</p></div>
+      <div class="product-grid">
+        ${items.map(p=>{
+          const sizes = SIZES[p.category]||['M'];
+          const so=SOLD_OUT.includes(p.id),one=sizes.length===1;
+          return `<article class="product-card" data-cat="${p.category}" data-id="${p.id}">
+            <div class="product-img qv-open" role="button" tabindex="0" aria-label="Quick view ${p.name}" onclick="openQV('${p.id}')" onkeydown="if(event.key==='Enter')openQV('${p.id}')"><img src="${p.img}" width="1000" height="1250" loading="lazy" decoding="async" alt="${p.name} ${p.variant}">${(MODEL[p.id]||[])[0]?`<img class="alt" src="assets/models/${p.id}_${MODEL[p.id][0]}.jpg" alt="" loading="lazy" decoding="async">`:''}${so?'<div class="product-tag" style="background:#b3261e">SOLD OUT</div>':p.tag?`<div class="product-tag">${p.tag}</div>`:''}
+              ${so?'':`<div class="quick-add" onclick="event.stopPropagation()"><span class="mono">${one?'QUICK ADD':'QUICK ADD — SIZE'}</span><div class="qa-sizes">${sizes.map(s=>`<button type="button" onclick="quickAdd('${p.id}','${s}')">${one?'ADD TO CART':s}</button>`).join('')}</div></div>`}
+              <span class="qa-plus" aria-hidden="true">+</span></div>
+            <div class="product-info">
+              <div class="product-top"><h4 class="product-name qv-open" onclick="openQV('${p.id}')">${p.name}</h4><div class="product-price">${fmt(p.price)}</div></div>
+              <div class="product-color">${p.variant}</div><div class="product-line">${LINES[p.id]||''}</div>
+            </div>
+          </article>`
+        }).join('')}
+      </div>
+    </section>`
+  }).join('');
+}
+
+function observeReveals(){
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const io=window.__io||(window.__io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -6% 0px'}));
+  document.querySelectorAll('.section-head,.product-card,.detail-grid img,.faq details,.crew-band>*,.lookbook-text,.statement').forEach(el=>{if(!el.classList.contains('rv')){el.classList.add('rv');io.observe(el)}});
+}
+{const _rs=renderSections;renderSections=function(){_rs();observeReveals()}}
+// ===== analytics (optional — set IDs in LIVE_CONFIG.analytics)
+(function(){const a=LIVE_CONFIG.analytics||{};
+  if(a.ga4){const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(a.ga4);document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',a.ga4)}
+  if(a.metaPixel){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',a.metaPixel);fbq('track','PageView')}
+})();
+function track(ev,d){d=d||{};try{
+  if(window.gtag)gtag('event',ev,{currency:'AUD',value:d.value,items:d.items});
+  if(window.fbq){const m={add_to_cart:'AddToCart',begin_checkout:'InitiateCheckout',purchase:'Purchase'}[ev];if(m)fbq('track',m,{currency:'AUD',value:d.value,content_ids:(d.items||[]).map(i=>i.item_id),content_type:'product'})}
+}catch(e){}}
+// ===== storage helpers (private-mode safe)
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const PROMO=LIVE_CONFIG.promo;
+let cart=[];try{cart=JSON.parse(store.get('resboys_cart')||'[]').filter(i=>PRODUCTS.some(p=>p.id===i.id))}catch(e){cart=[]}
+let discount=store.get('resboys_promo')===PROMO.code?PROMO:null;
+function saveCart(){store.set('resboys_cart',JSON.stringify(cart))}
+function cartCount(){return cart.reduce((s,i)=>s+i.qty,0)}
+function subtotal(){return cart.reduce((s,i)=>{const p=PRODUCTS.find(pr=>pr.id===i.id);return s+p.price*i.qty},0)}
+function discAmt(){return discount?Math.round(subtotal()*discount.percent)/100:0}
+function netSub(){return Math.round((subtotal()-discAmt())*100)/100}
+function freeShip(){return netSub()>200}
+function shipChoices(){return freeShip()?[{v:0,l:'Free shipping — $0.00'}]:[{v:10,l:'Standard $10.00 — 3-5 days'},{v:18,l:'Express $18.00 — 1-2 days'}]}
+function applyCode(raw){
+  const c=(raw||'').trim().toUpperCase();
+  if(c===PROMO.code){discount=PROMO;store.set('resboys_promo',PROMO.code);renderCart();return true}
+  return false;
+}
+function updateCountUI(){
+  renderSuggest();
+  document.getElementById('cartCount').textContent='['+cartCount()+']';
+  document.getElementById('subTotal').textContent=fmt(subtotal());
+  const dr=document.getElementById('discRow');
+  if(discount&&cart.length){dr.style.display='flex';document.getElementById('discLabel').textContent='Discount ('+discount.code+' −'+discount.percent+'%)';document.getElementById('discAmt').textContent='−'+fmt(discAmt())}else dr.style.display='none';
+  document.getElementById('shipNote').textContent=cart.length?(freeShip()?'FREE':'From $10.00 at checkout'):'Calculated at checkout';
+  document.getElementById('cartTotal').textContent=fmt(cart.length?netSub():0);
+  const left=200-netSub();
+  document.getElementById('fsFill').style.width=Math.min(100,Math.max(0,netSub()/2))+'%';
+  document.getElementById('freeShipNote').textContent=cart.length?(freeShip()?'FREE SHIPPING UNLOCKED':'ADD '+fmt(left+0.01)+' MORE FOR FREE SHIPPING'):'';
+}
+function renderSuggest(){
+  const el=document.getElementById('cartSuggest');
+  if(!cart.length){el.innerHTML='';return}
+  const have=new Set(cart.map(i=>i.id)),cats=new Set(cart.map(i=>PRODUCTS.find(p=>p.id===i.id).category));
+  const pri=['caps','tees','hoodies','bottoms','jackets'];
+  const picks=pri.filter(c=>!cats.has(c)).map(c=>PRODUCTS.find(p=>p.category===c&&!have.has(p.id)&&!SOLD_OUT.includes(p.id))).filter(Boolean).slice(0,2);
+  el.innerHTML=picks.length?'<div class="mono sg-t">COMPLETE THE LOOK</div><div class="sg-row">'+picks.map(p=>`<button class="sg-item" onclick="openQV('${p.id}')"><img src="${p.img}" alt="" loading="lazy"><span class="sg-n">${p.name}</span><span class="mono">${fmt(p.price)}</span></button>`).join('')+'</div>':'';
+}
+function renderCart(){
+  const el=document.getElementById('cartItems');
+  if(cart.length===0){el.innerHTML='<div class="mono" style="opacity:.6;padding:20px;text-align:center">Cart empty. Never blend in.</div>';updateCountUI();return;}
+  el.innerHTML=cart.map((item,idx)=>{
+    const p=PRODUCTS.find(pr=>pr.id===item.id);
+    return `<div class="cart-item">
+      <img src="${p.img}" alt="">
+      <div class="cart-item-meta"><h4>${p.name}</h4><p>${p.variant} — ${item.size}</p><div class="qty"><button aria-label="Less" onclick="changeQty(${idx},-1)">−</button><span class="mono">${item.qty}</span><button aria-label="More" onclick="changeQty(${idx},1)">+</button><span style="margin-left:10px" class="mono">${fmt(p.price)}</span></div></div>
+      <button aria-label="Remove" onclick="removeItem(${idx})" class="mono" style="border:1px solid #000;padding:4px 6px;height:fit-content">X</button>
+    </div>`}).join('');
+  updateCountUI();
+}
+window.addToCart=(id,sizeArg)=>{
+  const sizeEl=document.getElementById('size-'+id);const size=sizeArg||(sizeEl?sizeEl.value:'One Size');
+  const ex=cart.findIndex(c=>c.id===id&&c.size===size);
+  if(ex>-1)cart[ex].qty=Math.min(10,cart[ex].qty+1);else cart.push({id,size,qty:1});
+  saveCart();renderCart();{const p=PRODUCTS.find(x=>x.id===id);track('add_to_cart',{value:p.price,items:[{item_id:id,item_name:p.name,price:p.price,quantity:1}]})}openCartDrawer();
+}
+window.changeQty=(i,d)=>{cart[i].qty=Math.min(10,cart[i].qty+d);if(cart[i].qty<=0)cart.splice(i,1);saveCart();renderCart();}
+window.removeItem=(i)=>{cart.splice(i,1);saveCart();renderCart();}
+window.quickAdd=(id,size)=>window.addToCart(id,size);
+function openCartDrawer(){document.getElementById('cartDrawer').classList.add('open');document.getElementById('cartOverlay').classList.add('open');setTimeout(()=>document.getElementById('closeCart').focus(),50)}
+function closeCartDrawer(){document.getElementById('cartDrawer').classList.remove('open');document.getElementById('cartOverlay').classList.remove('open');}
+document.getElementById('openCart').onclick=openCartDrawer;
+document.getElementById('closeCart').onclick=closeCartDrawer;
+document.getElementById('cartOverlay').onclick=closeCartDrawer;
+document.getElementById('codeApply').onclick=()=>{
+  const v=document.getElementById('codeInput').value,m=document.getElementById('codeMsg');
+  if(!v.trim()){m.textContent='';return}
+  if(applyCode(v)){m.textContent='CODE APPLIED ✓';document.getElementById('codeInput').value=''}else m.textContent='INVALID CODE';
+};
+document.getElementById('codeInput').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('codeApply').click()});
+
+function fillShipping(){
+  const sel=document.querySelector('#checkoutForm select[name="shipping"]');
+  const ch=shipChoices();sel.innerHTML=ch.map(c=>`<option value="${c.v}">${c.l}</option>`).join('');
+}
+function renderOrderSummary(){
+  fillShipping();
+  const ship=parseFloat(document.querySelector('#checkoutForm select[name="shipping"]').value);
+  document.getElementById('orderSummary').innerHTML=`
+    <div class="mono" style="font-weight:700">Order Summary — ${cartCount()} items</div>
+    ${cart.map(it=>{const p=PRODUCTS.find(pr=>pr.id===it.id);return `<div class="row"><span>${p.name} ${p.variant} x${it.qty} [${it.size}]</span><span>${fmt(p.price*it.qty)}</span></div>`}).join('')}
+    <div class="row" style="border-top:1px dashed #000;padding-top:8px;margin-top:4px"><span>Subtotal</span><span>${fmt(subtotal())}</span></div>
+    ${discount?`<div class="row" style="color:#1d6b3a"><span>${discount.code} −${discount.percent}%</span><span>−${fmt(discAmt())}</span></div>`:''}
+    <div class="row"><span>Shipping</span><span>${fmt(ship)}</span></div>
+    <div class="row" style="font-weight:700;font-size:13px;border-top:1px solid #000;padding-top:8px"><span>Total AUD</span><span>${fmt(netSub()+ship)}</span></div>`;
+  document.getElementById('payTotal').textContent=fmt(netSub()+ship);
+}
+
+// ===== Shopify: cart permalink (no SDK/token needed). Discount is passed in the URL.
+async function createShopifyCheckout(){
+  const num=v=>String(v).split('/').pop();
+  const parts=cart.map(it=>{
+    let v=LIVE_CONFIG.shopify.variants[it.id];
+    if(v&&typeof v==='object')v=v[it.size];
+    if(!v)throw new Error('Missing variant ID for '+it.id+' ('+it.size+')');
+    return num(v)+':'+it.qty;
+  });
+  let url='https://'+LIVE_CONFIG.shopify.domain+'/cart/'+parts.join(',');
+  if(discount)url+='?discount='+encodeURIComponent(discount.code);
+  window.location.href=url;
+}
+// ===== Stripe: Cloudflare Worker prices everything server-side
+async function createStripeCheckout(){
+  const workerUrl=LIVE_CONFIG.stripe.checkoutWorkerUrl;
+  if(!workerUrl)throw new Error('Stripe checkoutWorkerUrl is not set');
+  const res=await fetch(workerUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+    items:cart.map(it=>({id:it.id,size:it.size,qty:it.qty})),
+    discount_code:discount?discount.code:null,
+    success_url:location.origin+location.pathname+'?success=1',cancel_url:location.href})});
+  const data=await res.json();
+  if(data.url)window.location.href=data.url;else throw new Error(data.error||'unknown');
+}
+const checkoutBtn=document.getElementById('checkoutBtn');
+checkoutBtn.onclick=async()=>{
+  if(cart.length===0)return;
+  {const it=cart.map(c=>{const p=PRODUCTS.find(x=>x.id===c.id);return{item_id:c.id,item_name:p.name,price:p.price,quantity:c.qty}});store.set('resboys_last',JSON.stringify({value:netSub(),items:it}));track('begin_checkout',{value:netSub(),items:it})}
+  checkoutBtn.disabled=true;const old=checkoutBtn.textContent;checkoutBtn.textContent='LOADING…';
+  try{
+    if(LIVE_CONFIG.mode==='shopify')await createShopifyCheckout();
+    else if(LIVE_CONFIG.mode==='stripe')await createStripeCheckout();
+    else{renderOrderSummary();document.getElementById('checkoutModal').classList.add('open')}
+  }catch(e){alert('Checkout could not start: '+e.message+'. Please try again or email crew@resboys.com.au');}
+  finally{checkoutBtn.disabled=false;checkoutBtn.textContent=old}
+};
+document.getElementById('closeModal').onclick=()=>document.getElementById('checkoutModal').classList.remove('open');
+document.getElementById('modalBg').onclick=()=>document.getElementById('checkoutModal').classList.remove('open');
+document.querySelector('#checkoutForm select[name="shipping"]').addEventListener('change',renderOrderSummary);
+document.getElementById('checkoutForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(e.target));const totalEl=document.getElementById('payTotal').textContent;
+  document.getElementById('modalBody').innerHTML=`<div class="success"><div class="mono">TEST ORDER ✓ — NO PAYMENT TAKEN</div><h2>NEVER<br>BLEND IN.</h2><p>Thanks ${String(data.first).replace(/</g,'&lt;')} — test order total ${totalEl} AUD.</p><button onclick="location.reload()" class="checkout-btn" style="width:100%;max-width:360px;margin-top:12px">CONTINUE SHOPPING</button></div>`;
+  cart=[];saveCart();renderCart();
+});
+function showConfirmed(){
+  try{const l=JSON.parse(store.get('resboys_last')||'null');if(l){track('purchase',l);store.del('resboys_last')}}catch(e){}
+  cart=[];saveCart();renderCart();
+  document.getElementById('modalBody').innerHTML=`<div class="success"><div class="mono">ORDER CONFIRMED ✓</div><h2>WELCOME<br>TO THE CREW.</h2><p>Order locked in. Receipt and tracking are on their way to your inbox. Now go be seen.</p><button onclick="document.getElementById('checkoutModal').classList.remove('open')" class="checkout-btn" style="width:100%;max-width:360px;margin-top:12px">CONTINUE SHOPPING</button></div>`;
+  document.getElementById('checkoutModal').classList.add('open');
+  history.replaceState(null,'',location.pathname);
+}
+
+// Filters + sort
+let FILTER='all';
+const GROUPKEY={caps:'caps',hoodies:'hoodies',tees:'t-shirts',jackets:'jackets & vests',bottoms:'bottoms'};
+function applyFilter(){document.querySelectorAll('#productSections .section').forEach(s=>{s.style.display=(FILTER==='all'||s.dataset.group===GROUPKEY[FILTER])?'':'none'})}
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  FILTER=btn.dataset.filter;applyFilter();if(FILTER!=='all')document.getElementById('shop').scrollIntoView({behavior:'smooth'});
+}));
+document.getElementById('sortSel').addEventListener('change',e=>{SORT=e.target.value;renderSections();applyFilter()});
+
+renderSections();renderCart();
+
+// ===== QUICK VIEW =====
+const DESC={cap:'Structured crown, flat brim, RES BOYS stitched on the front. One size.',hoodie:'Heavyweight fleece in an oversized fit, RES BOYS on the chest. Built to be lived in.',tee:'100% cotton, regular fit, small RES BOYS on the chest. The day-one essential.',jacket:'Layer it over everything. Branded details, built to be worn hard.',bottom:'Relaxed fit, RES BOYS branding, built for the block.'};
+const DESC_BY_ID={hoodie_back_black:'Same heavyweight fleece, oversized fit — with a large RES BOYS print across the back. Say it loud.',jacket_work:'Work jacket with a collar, full zip and branded pull. Layer it over everything.',vest_puffer:'Quilted puffer vest with RES BOYS on the chest. Layer it over a hoodie and stand out.',pants_cargo_black:'Relaxed cargo pant with side pockets. Pockets for everything.',pants_joggers_charcoal:'Relaxed jogger, tapered with a cuff.',shorts_cargo_olive:'Relaxed cargo short with side pockets.',shorts_black:'Relaxed fit short with RES BOYS down the leg.'};
+const FIT={caps:'One size',hoodies:'Fit: oversized',tees:'Fit: regular',jackets:'Fit: cut for layering',bottoms:'Fit: relaxed'};
+let qvId=null,qvOpener=null,galList=[],galIdx=0;
+const FITLONG={caps:'One size, adjustable snapback.',hoodies:'Cut oversized. True to size for the boxy look; size down for a closer fit.',tees:'Regular fit. True to size.',jackets:'Cut for layering over a hoodie. Between sizes? Size up.',bottoms:'Relaxed fit. True to size; between sizes, size down.'};
+const VIEW_LABEL={m:'Male model',f:'Female model'};
+function galleryFor(p){const l=[{src:p.img,label:'Product'}];(MODEL[p.id]||[]).forEach(k=>l.push({src:`assets/models/${p.id}_${k}.jpg`,label:VIEW_LABEL[k]||'On model'}));return l}
+function showGal(i){galIdx=(i+galList.length)%galList.length;const g=galList[galIdx];const im=document.getElementById('qvImg');im.src=g.src;im.alt=(document.getElementById('qvName').textContent||'')+' — '+g.label;
+  document.querySelectorAll('#qvThumbs button').forEach((b,n)=>b.classList.toggle('on',n===galIdx));im.classList.toggle('model',galIdx>0)}
+function setGallery(p){galList=galleryFor(p);const multi=galList.length>1;
+  document.getElementById('qvThumbs').innerHTML=multi?galList.map((g,n)=>`<button type="button" aria-label="${g.label}" onclick="showGal(${n})"><img src="${g.src}" alt="" loading="lazy"></button>`).join(''):'';
+  document.getElementById('qvPrev').hidden=document.getElementById('qvNext').hidden=!multi;document.getElementById('qvName').textContent=p.name;showGal(0)}
+window.showGal=showGal;
+function descFor(p){return DESC_BY_ID[p.id]||DESC[p.category==='caps'?'cap':p.category==='hoodies'?'hoodie':p.category==='tees'?'tee':p.category==='jackets'?'jacket':'bottom']}
+window.openQV=function(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;qvId=id;qvOpener=document.activeElement;
+  setGallery(p);history.replaceState(null,'','#p-'+p.id);
+  document.getElementById('qvCat').textContent=p.group;document.getElementById('qvName').textContent=p.name;document.getElementById('qvVar').textContent=p.variant;
+  document.getElementById('qvPrice').textContent=fmt(p.price)+' AUD';document.getElementById('qvLine').textContent=LINES[id]||'';document.getElementById('qvDesc').textContent=descFor(p);
+  document.getElementById('qvFit').textContent=FIT[p.category]||'';document.getElementById('qvFitLong').textContent=FITLONG[p.category]||'';
+  document.getElementById('qvSize').innerHTML=(SIZES[p.category]||['One Size']).map(s=>`<option>${s}</option>`).join('');
+  const m=document.getElementById('qv');m.hidden=false;requestAnimationFrame(()=>m.classList.add('show'));m.querySelector('.qv-box').scrollTop=0;document.getElementById('qvAdd').focus({preventScroll:true});
+};
+function closeQV(){if(location.hash.startsWith('#p-'))history.replaceState(null,'',location.pathname+location.search);const m=document.getElementById('qv');m.classList.remove('show');setTimeout(()=>{m.hidden=true},200);qvOpener&&qvOpener.focus&&qvOpener.focus()}
+document.querySelectorAll('[data-qvclose]').forEach(e=>e.addEventListener('click',closeQV));
+document.getElementById('qvPrev').onclick=()=>showGal(galIdx-1);document.getElementById('qvNext').onclick=()=>showGal(galIdx+1);
+if(location.hash.startsWith('#p-')&&PRODUCTS.some(x=>'#p-'+x.id===location.hash))setTimeout(()=>openQV(location.hash.slice(3)),400);
+document.getElementById('qvAdd').onclick=()=>{
+  const size=document.getElementById('qvSize').value,id=qvId,ex=cart.findIndex(c=>c.id===id&&c.size===size);
+  if(ex>-1)cart[ex].qty=Math.min(10,cart[ex].qty+1);else cart.push({id,size,qty:1});
+  saveCart();renderCart();{const p=PRODUCTS.find(x=>x.id===id);track('add_to_cart',{value:p.price,items:[{item_id:id,item_name:p.name,price:p.price,quantity:1}]})}closeQV();setTimeout(openCartDrawer,220);
+};
+const sg=document.getElementById('sg');
+document.getElementById('qvGuide').onclick=()=>{sg.hidden=false;requestAnimationFrame(()=>sg.classList.add('show'))};
+function closeSG(){sg.classList.remove('show');setTimeout(()=>{sg.hidden=true},200)}
+document.querySelectorAll('[data-sgclose]').forEach(e=>e.addEventListener('click',closeSG));
+// ===== product schema for Google =====
+(function(){
+  const base=location.origin+location.pathname.replace(/[^/]*$/,'');
+  const el=document.createElement('script');el.type='application/ld+json';
+  el.textContent=JSON.stringify({'@context':'https://schema.org','@graph':PRODUCTS.map(p=>({'@type':'Product',name:p.name+' — '+p.variant,image:base+p.img,description:descFor(p),brand:{'@type':'Brand',name:'RES BOYS'},sku:p.id,offers:{'@type':'Offer',url:base+'#shop',priceCurrency:'AUD',price:p.price.toFixed(2),availability:'https://schema.org/InStock',shippingDetails:{'@type':'OfferShippingDetails',shippingDestination:{'@type':'DefinedRegion',addressCountry:'AU'}}}}))});
+  document.head.appendChild(el);
+})();
+// ===== focus trap for dialogs =====
+document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;
+  const open=[...document.querySelectorAll('.qv.show,.promo.show,#cartDrawer.open,#checkoutModal.open')].pop();if(!open)return;
+  const f=[...open.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,summary,[tabindex]:not([tabindex="-1"])')].filter(el=>el.getClientRects().length);if(!f.length)return;
+  const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}});
+// ===== mobile menu + ESC =====
+(function(){const hd=document.querySelector('header');const set=()=>document.documentElement.style.setProperty('--hh',hd.offsetHeight+'px');set();addEventListener('resize',set);addEventListener('load',set)})();
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+menuBtn.onclick=()=>{const o=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);menuBtn.textContent=o?'CLOSE':'MENU'};
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded',false);menuBtn.textContent='MENU'}));
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;
+  if(!sg.hidden)closeSG();else if(!document.getElementById('qv').hidden)closeQV();else{closeCartDrawer();document.getElementById('checkoutModal').classList.remove('open')}});
+const IS_SUCCESS=new URLSearchParams(location.search).get('success')==='1';
+if(IS_SUCCESS)showConfirmed();
+
+// ===== 15% OFF POPUP =====
+(function(){
+  const pop=document.getElementById('promo'),body=document.getElementById('promoBody');
+  const SEEN='resboys_promo_seen',DAYS=3;let shown=false;
+  const seenRecently=()=>{const t=parseInt(store.get(SEEN)||'0',10);return t&&(Date.now()-t)<DAYS*864e5};
+  function open(){
+    if(shown||discount||seenRecently()||IS_SUCCESS)return;
+    if(document.getElementById('cartDrawer').classList.contains('open')||document.getElementById('checkoutModal').classList.contains('open'))return;
+    shown=true;pop.hidden=false;requestAnimationFrame(()=>pop.classList.add('show'));
+    setTimeout(()=>{const i=document.getElementById('promoEmail');i&&i.focus()},350);
+  }
+  function close(){pop.classList.remove('show');store.set(SEEN,String(Date.now()));setTimeout(()=>{pop.hidden=true},300)}
+  pop.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',close));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!pop.hidden)close()});
+  setTimeout(open,9000);                                                      // timed
+  document.addEventListener('mouseout',e=>{if(!e.relatedTarget&&e.clientY<8)setTimeout(open,50)});  // desktop exit intent
+  let sc=false;window.addEventListener('scroll',()=>{if(!sc&&scrollY>innerHeight*1.4){sc=true;open()}},{passive:true}); // scroll depth
+  window.__capture=capture;
+  async function capture(email,source){
+    const ep=LIVE_CONFIG.newsletter.endpoint;
+    if(ep){try{await fetch(ep,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email,source,consent:true})})}catch(e){}}
+    applyCode(PROMO.code);
+  }
+  const ok=e=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e);
+  document.getElementById('promoForm').addEventListener('submit',async e=>{
+    e.preventDefault();const em=document.getElementById('promoEmail').value.trim(),err=document.getElementById('promoErr');
+    if(!ok(em)){err.textContent='ENTER A VALID EMAIL';return}
+    err.textContent='';await capture(em,'popup');
+    body.innerHTML=`<div class="mono">YOU'RE IN</div><h2 class="anton">15% OFF<br>UNLOCKED.</h2><div class="promo-code mono">${PROMO.code}</div><p>Already applied to your cart — it'll come off at checkout automatically.</p><button class="promo-go" data-close2>START SHOPPING →</button>`;
+    body.querySelector('[data-close2]').onclick=()=>{close();document.getElementById('shop').scrollIntoView({behavior:'smooth'})};
+  });
+  document.getElementById('footerForm').addEventListener('submit',async e=>{
+    e.preventDefault();const inp=e.target.querySelector('input'),em=inp.value.trim();
+    if(!ok(em)){inp.setCustomValidity('Enter a valid email');inp.reportValidity();return}
+    await capture(em,'footer');e.target.innerHTML='<span class="mono" style="font-size:11px">15% OFF APPLIED — '+PROMO.code+'</span>';
+  });
+  const crew=document.getElementById('crewForm');
+  if(crew)crew.addEventListener('submit',async e=>{e.preventDefault();const inp=crew.querySelector('input'),em=inp.value.trim();
+    if(!ok(em)){inp.setCustomValidity('Enter a valid email');inp.reportValidity();inp.oninput=()=>inp.setCustomValidity('');return}
+    await capture(em,'crew-band');crew.innerHTML='<div class="crew-ok anton">YOU’RE IN. 15% OFF APPLIED.</div><div class="mono">CODE '+PROMO.code+' IS ALREADY IN YOUR CART.</div>'});
+})();
+
+function updateLiveBadge(){
+  const badge=document.getElementById('liveModeBadge');
+  if(!badge) return;
+  if(LIVE_CONFIG.mode==='shopify') badge.textContent='LIVE MODE: SHOPIFY CHECKOUT — '+LIVE_CONFIG.shopify.domain;
+  else if(LIVE_CONFIG.mode==='stripe') badge.textContent='LIVE MODE: STRIPE CHECKOUT — '+ (LIVE_CONFIG.stripe.checkoutWorkerUrl || 'Payment Links');
+  else badge.textContent='TEST MODE — set LIVE_CONFIG.mode to \'shopify\' or \'stripe\' to take real orders';
+}
+updateLiveBadge();
+
+</script>
+</body>
+</html>

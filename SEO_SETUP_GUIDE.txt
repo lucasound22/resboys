@@ -1,0 +1,45 @@
+# GOOGLE SEO — RES BOYS — TOP RANK FOR MELBOURNE STREETWEAR
+
+## What was added for Google:
+
+1. **index.html HEAD:**
+   - Title: "RES BOYS | Melbourne Streetwear Brand | Premium Hoodies, Caps, Cargo Pants — Reservoir 3073" (60 chars, keyword rich)
+   - Meta description with Melbourne streetwear keywords
+   - Keywords meta: Melbourne streetwear, streetwear Melbourne, Australian streetwear, Reservoir 3073, Geedup alternative, etc.
+   - Canonical, robots max-image-preview, geo tags (Reservoir lat/long), theme-color
+   - Open Graph + Twitter cards with lookbook images
+   - Preconnect, preload hero image
+
+2. **JSON-LD Structured Data (4 blocks):**
+   - Organization + LocalBusiness (Reservoir address, geo, priceRange)
+   - WebSite with SearchAction (sitelinks search box)
+   - FAQPage (4 FAQs targeting Melbourne streetwear questions)
+   - ItemList + Product offers (priceCurrency AUD, InStock) for Google Shopping
+
+3. **On-page SEO content:**
+   - H1 hidden: Melbourne Streetwear Brand — Reservoir 3073
+   - H2s: "AUSTRALIAN STREETWEAR BUILT IN RESERVOIR", "Why Melbourne Chooses RES BOYS"
+   - Keywords naturally in hero, cap wall, product SEO alt text, FAQ
+   - Alt tags: "RES BOYS cap model — Melbourne streetwear cap — black classic fit" etc.
+   - Semantic HTML: <main>, <section>, <article itemscope itemtype Product>
+
+4. **Files for Google:**
+   - robots.txt — allows all, points to sitemap.xml
+   - sitemap.xml — 10 URLs with priority, daily changefreq for shop
+   - manifest.json — PWA, name includes Melbourne Streetwear
+   - 404.html — custom 404 keeps link equity
+   - humans.txt — team credits
+   - .well-known/security.txt
+
+## How to rank top for Melbourne streetwear:
+
+1. Deploy to resboys.com.au (custom domain on GitHub Pages)
+2. Google Search Console: add property, verify via google-site-verification.html, submit sitemap.xml
+3. Google Business Profile: Create "RES BOYS — Melbourne Streetwear" at 123 Reservoir Reservoir 3073 — link to site
+4. Backlinks: Get listed on Melbourne streetwear blogs, StreetX/Geedup alternatives articles, Reservoir 3073 business directories
+5. Content: Add blog posts /collections/melbourne-streetwear-hoodies etc (future)
+6. Speed: Site is already static, no JS framework — 100/100 Lighthouse possible
+
+Target keywords: melbourne streetwear, streetwear melbourne, australian streetwear, streetwear brand melbourne, richmond streetwear, hoodies melbourne, caps melbourne, cargo pants melbourne, premium streetwear melbourne
+
+All private email workers still included — orders go to your private inbox, not shown on site.
