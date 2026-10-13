@@ -1,10 +1,10 @@
-# RES BOYS — DROP 01 / SS26 — PRO STREET BUILD + PRIVATE ORDER EMAIL
+# 73 — DROP 01 / SS26 — PRO STREET BUILD + PRIVATE ORDER EMAIL
 
 Design inspired by Lids (hat wall), Nike (tech), Elite 11 / Geedup / StreetX / HoMie (Melbourne street)
 
 ## LIVE MODE — Option B (Stripe) — How orders go to lucasound@gmail.com PRIVATELY
 
-Your private email NEVER appears on the website. Footer still shows crew@resboys.com.au.
+Your private email NEVER appears on the website. Footer still shows crew@shop73.com.au.
 
 ### Two workers (both hide your email):
 

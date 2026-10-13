@@ -1,4 +1,4 @@
-// Cloudflare Worker - RES BOYS Order Email (for manual/demo checkout)
+// Cloudflare Worker - 73 Order Email (for manual/demo checkout)
 // Deploy separately: wrangler init res-boys-orders, paste, wrangler deploy
 // This worker receives POST from GitHub Pages and emails you privately
 // Frontend never shows your private email
@@ -11,7 +11,7 @@ export default {
       return new Response(null, { headers: corsHeaders() });
     }
     if (request.method !== 'POST') {
-      return new Response('RES BOYS Order Email Worker Live', { headers: corsHeaders() });
+      return new Response('73 Order Email Worker Live', { headers: corsHeaders() });
     }
     try {
       const data = await request.json();
@@ -29,7 +29,7 @@ export default {
         return `${name} [${it.size}] x${it.qty} — ${price}`;
       }).join('\n');
 
-      const subject = `NEW RES BOYS ORDER — ${customer?.email || 'Guest'} — ${total || ''} AUD`;
+      const subject = `NEW 73 ORDER — ${customer?.email || 'Guest'} — ${total || ''} AUD`;
 
       const text = `NEW ORDER — DROP 01 / SS26
 
@@ -49,7 +49,7 @@ Shipping: ${customer?.shipping || 'Standard'}
 
 Time: ${new Date().toISOString()}
 
-— Sent from resboys.com.au checkout (GitHub Pages)
+— Sent from shop73.com.au checkout (GitHub Pages)
 Private notification — do not reply to customer from this address unless you want to.
 `;
 
@@ -58,8 +58,8 @@ Private notification — do not reply to customer from this address unless you w
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
-          personalizations: [{ to: [{ email: PRIVATE_OWNER_EMAIL, name: 'RES BOYS Orders' }] }],
-          from: { email: 'orders@resboys.com.au', name: 'RES BOYS Store' },
+          personalizations: [{ to: [{ email: PRIVATE_OWNER_EMAIL, name: '73 Orders' }] }],
+          from: { email: 'orders@shop73.com.au', name: '73 Store' },
           subject,
           content: [{ type: 'text/plain', value: text }],
           reply_to: customer?.email ? { email: customer.email, name: `${customer.first||''} ${customer.last||''}` } : undefined

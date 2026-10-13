@@ -1,15 +1,42 @@
-// RES BOYS — Stripe Checkout Worker (Cloudflare Workers)
+// 73 — Stripe Checkout Worker (Cloudflare Workers)
 // Prices are defined HERE, server-side. The browser only sends {id, size, qty} so nobody can edit a price in dev tools.
 // Setup:
 //   wrangler secret put STRIPE_SECRET_KEY        (sk_live_...)
-//   wrangler secret put ALLOWED_ORIGIN           (https://resboys.com.au)
+//   wrangler secret put ALLOWED_ORIGIN           (https://shop73.com.au)
 //   Stripe Dashboard > Products > Coupons: create a 15% coupon with ID  NEVERBLEND15  (or set PROMO_COUPON_ID)
 const CATALOG = {
-  cap_black:['HENTY SNAPBACK — Black',5995], cap_charcoal:['RUTHVEN SNAPBACK — Charcoal',5995], cap_olive:['EDWARDES SNAPBACK — Olive',5995], cap_white:['DUNDAS SNAPBACK — White',5995],
-  hoodie_black:['GILBERT HOODIE — Black',14995], hoodie_charcoal:['BROADWAY HOODIE — Charcoal',14995], hoodie_olive:['DAREBIN HOODIE — Olive',14995], hoodie_bone:['SUMMERHILL HOODIE — Bone',14995], hoodie_back_black:['CUTHBERT HOODIE — Black, Large Back Print',14995],
-  tee_black:['PLENTY TEE — Black',6995], tee_charcoal:['CHEDDAR TEE — Charcoal',6995], tee_olive:['MERRI TEE — Olive',6995], tee_white:['HIGH ST TEE — White',6995],
-  jacket_work:['SETTLEMENT WORK JACKET — Black',19995], vest_puffer:['BOLDREWOOD PUFFER — Black',18995],
-  pants_cargo_black:['DUNDAS CARGO — Black',13995], pants_joggers_charcoal:['LAKESIDE JOGGER — Charcoal',12995], shorts_cargo_olive:['MERRI CARGO SHORT — Olive',10995], shorts_black:['BROADWAY SHORT — Black',8995],
+  trk_jacket_rose:['Edwardes Track Jacket — Black / Rose',16995],
+  trk_jacket_ice:['Edwardes Track Jacket — Black / Ice',16995],
+  trk_jacket_bone:['Edwardes Track Jacket — Black / Bone',16995],
+  trk_jacket_olive:['Edwardes Track Jacket — Olive / Bone',16995],
+  trk_jacket_ox:['Edwardes Track Jacket — Oxblood / Bone',16995],
+  trk_pant_rose:['Edwardes Track Pant — Black / Rose',12995],
+  trk_pant_ice:['Edwardes Track Pant — Black / Ice',12995],
+  trk_pant_bone:['Edwardes Track Pant — Black / Bone',12995],
+  trk_pant_olive:['Edwardes Track Pant — Olive / Bone',12995],
+  trk_pant_ox:['Edwardes Track Pant — Oxblood / Bone',12995],
+  trk_short_rose:['Edwardes Track Short — Black / Rose',8995],
+  trk_short_bone:['Edwardes Track Short — Black / Bone',8995],
+  trk_short_olive:['Edwardes Track Short — Olive / Bone',8995],
+  hoodie_oxblood:['Original Hoodie — Oxblood',14995],
+  cap_oxblood:['Original Snapback — Oxblood',5995],
+  cap_black:['Henty Snapback — Black',5995],
+  cap_charcoal:['Henty Snapback — Charcoal',5995],
+  cap_olive:['Henty Snapback — Olive',5995],
+  cap_white:['Henty Snapback — White',5995],
+  hoodie_black:['Gilbert Hoodie — Black',14995],
+  hoodie_charcoal:['Gilbert Hoodie — Charcoal',14995],
+  hoodie_olive:['Gilbert Hoodie — Olive',14995],
+  hoodie_bone:['Gilbert Hoodie — Bone',14995],
+  hoodie_back_black:['Gilbert Hoodie — Black — Large Back Print',14995],
+  tee_black:['Plenty Tee — Black',6995],
+  tee_charcoal:['Plenty Tee — Charcoal',6995],
+  tee_olive:['Plenty Tee — Olive',6995],
+  tee_white:['Plenty Tee — White',6995],
+  jacket_work:['Settlement Work Jacket — Black',19995],
+  vest_puffer:['Boldrewood Puffer — Black',18995],
+  pants_joggers_charcoal:['Lakeside Jogger — Charcoal',12995],
+  shorts_black:['Broadway Sweatshort — Washed Black',8995],
 };
 const SIZES = ['One Size','S','M','L','XL','XXL'];
 const PROMO = { code: 'NEVERBLEND15', percent: 15 };
@@ -19,7 +46,7 @@ export default {
   async fetch(request, env) {
     const cors = corsHeaders(env);
     if (request.method === 'OPTIONS') return new Response(null, { headers: cors });
-    if (request.method !== 'POST') return new Response('RES BOYS Checkout Worker', { headers: cors });
+    if (request.method !== 'POST') return new Response('73 Checkout Worker', { headers: cors });
     try {
       const { items, discount_code, success_url, cancel_url } = await request.json();
       if (!Array.isArray(items) || !items.length || items.length > 30) return json({ error: 'Invalid cart' }, 400, cors);
